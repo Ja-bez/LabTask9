@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            height: 3000px;
+        }
+        .close{
+            position: absolute;
+            right: 0;
+        }
+        .fixed{
+            position: fixed;
+            width: 320px;
+            height: 180px;
+            background-color: gray;
+            bottom: 0;
+            right: 0;
+
+        }
+
+        .position-container {
+            width: fit-content;
+            position: relative;
+        }
+
+        .sale {
+        position: absolute;
+        background-color: black;
+        color: white;
+        top: 8px;
+        right: 0;
+        padding: 0 10px 0 10px;
+        font-size: 15px;
+        }
+
+        .relative img { 
+        height: 350px;
+        width: 300px;
+        object-fit: cover;
+        opacity: 100%;
+        }
+        .cartbg {
+            position: absolute;
+            bottom: 0;
+            text-align: center;
+            width: 100%;
+            background-color: white;
+            height: 30%;
+            opacity: 0.6;
+        }
+        .cart{
+            position: absolute;
+            bottom: 0;
+            text-align: center;
+            align-items: center;
+            height: 21%;
+            width: 100%;
+        }
+        .child button{
+            background-color: white;
+            color: black;
+            padding: 10px 20px 10px 20px;
+            opacity: 1;
+        }
+        .child button:hover{
+            cursor: pointer;
+            background-color: black;
+            color: white;
+            transition: 1s;
+            border:1px solid white;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="closebtn">
+            <div class="close">
+                <img src="./close.png" alt="" style="width: 60px;">
+            </div>
+        
+            <div class="fixed">
+            </div>
+
+            <div class="position-container">
+                <div class="relative">
+                    <img src="./shirt.jpg" alt="">
+                        <div class="absolute">
+                                <div class="sale">
+                                <p>20% OFF</p>
+                                </div>
+                        </div>
+                </div>
+
+                <div class="cartbg">
+                </div>
+                <div class="cart">
+                    <button type="submit">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
